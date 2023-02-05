@@ -3,13 +3,10 @@ public class Main {
     public static int bossHealth = 700;
     public static int bossDamage = 50;
     public static String bossAttackType = "";
-
     public static int [] heroesHealth = {270, 280, 260};
     public static int [] heroesDamage = {20, 15, 25};
     public static String [] heroesAttackType = {"Physical", "Magical", "Kinetic"};
-
     public static int roundNumber = 0;
-
     public static void main(String[] args) {
         printStatics();
         while (!isGameFinished()) {
@@ -22,7 +19,6 @@ public class Main {
         for (int i = 0; i < heroesAttackType.length; i++) {
             System.out.println(heroesAttackType[i] + " Hero health = " + heroesHealth[i] + " [ " + heroesDamage[i] + " ] ");
         }
-        System.out.println();
     }
     public static void bossHits() {
         for (int i = 0; i < heroesHealth.length; i++) {
@@ -51,16 +47,4 @@ public class Main {
         }
         return false;
     }
-//
-
-
-
-
-
-
-
-
-
-
-
 }
